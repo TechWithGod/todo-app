@@ -189,3 +189,26 @@ border-radius:1rem;
     justify-content: space-between;
   }
 }
+
+@media screen and (max-width:350px) {
+  #create-new-task {
+    font-size:1.5rem;
+  }
+  #main-title h2 {
+    font-size:1.5rem;
+  }
+  #uncompleted-tasks h2, #completed-tasks h2  {
+    font-size:1.2rem;
+  }
+  #uncompleted-tasks > ul > li, #completed-tasks > ul > li {
+    font-size:1rem;
+    width:95%;
+  }
+  #uncompleted-tasks > ul > li > button, #completed-tasks > ul > li > button{
+   font-size:smaller;
+  }
+  #mark-task {
+    width:10px;
+    height:10px;
+  }
+}
