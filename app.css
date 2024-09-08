@@ -163,3 +163,29 @@ border-radius:1rem;
 #completed-tasks input[type="checkbox"]:checked {
   background:red
 }
+
+
+@media screen and (max-width:500px) {
+  #main-title h2 {
+    font-size:2rem;
+  }
+
+  #create-new-task {
+    font-size:2rem;
+  }
+  body {
+    background-color:black;
+  }
+
+  #uncompleted-tasks h2, #completed-tasks h2  {
+    min-width:450px;
+    font-size:1.7rem;
+  }
+  #uncompleted-tasks, #completed-tasks  {
+        font-size:1rem;
+  }
+
+  header {
+    justify-content: space-between;
+  }
+}
