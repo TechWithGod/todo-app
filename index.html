@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>My Todo App</title>
+    <link rel="stylesheet" href="./app.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <form id="task-form">
+      <h2>ADD NEW TASK</h2>
+      <div class="form-control">
+      <input type="text" placeholder="Add New Task" name="task" id="task">
+      <button id="add-task">ADD TASK</button>
+    </div>
+    </form>
+    <div id="backdrop"></div>
+    <div id="app-wrapper">
+      <header>
+        <div id="create-new-task" class="fa-solid fa-plus" >
+        </div>
+        <div id="main-title">
+          <h2></h2>
+        </div>
+      </header>
+      <div class="task-lists">
+      <section id="uncompleted-tasks">
+        <h2>Uncompleted Tasks</h2>
+        <ul>
+        </ul>
+      </section>
+      <section id="completed-tasks">
+        <h2>Completed Tasks</h2>
+        <ul>
+        </ul>
+      </section>
+    </div>
+    </div>
+  </body>
+</html>

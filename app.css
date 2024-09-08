@@ -1,0 +1,165 @@
+html {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+*, *::after, *::before {
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+}
+
+header {
+  background-color:rgb(238, 229, 229);
+  color:red;
+  position:relative;
+  margin-bottom:2rem;
+}
+
+#main-title {
+  text-align: center;
+  font-size:2.5rem;
+  padding:1rem 0;
+  transition:1s ease-in-out all;
+  text-shadow:-3px -3px 1px rgb(241, 227, 227);
+
+}
+
+#app-wrapper {
+  width:100vw;
+  height:100vh;
+  /* background-color:rgb(34, 33, 33); */
+  color:rgb(17, 10, 10);
+}
+
+#create-new-task {
+  position:absolute;
+  top:30%;
+  left:10%;
+  font-size:3rem;
+  
+}
+
+@keyframes slide-in {
+  to {
+    transform:translateX(250px);
+  }
+}
+
+#backdrop {
+  top:0;
+  left:0;
+  width:100vw;
+  height:100vh;
+  position:fixed;
+  z-index:10;
+  background-color: rgba(0, 0, 0, 0.696);
+  display:none;
+}
+
+#backdrop.visible {
+  display:block;
+  
+}
+
+#task-form{
+  /* height:300px; */
+  display:flex;
+  flex-direction:column;
+  padding:2rem;
+  align-items:space-between;
+  position:fixed;
+  background-color: white;
+  z-index:100;
+  top:40%;
+  left:35%;
+  display:none;
+  align-items: center;
+  justify-content: space-around;
+  border-radius:1rem;
+  text-align: center;
+}
+
+#task-form  h2 {
+  margin-bottom:2rem;
+}
+#task-form  input {
+  height:2.5rem;
+  font-size:1.2rem;
+  text-align: center;
+  border-radius:1rem;
+
+}
+#task-form  button{
+outline:none;
+border:none;
+background-color: black;
+font-size:1.2rem;
+color:white;
+padding:0.5rem 1rem;
+border-radius:1rem;
+}
+
+#task-form:hover {
+  cursor:pointer;
+}
+
+#task-form.visible {
+  display:block;
+}
+
+.task-lists {
+  padding:1rem;
+  display:flex;
+  width:100%;
+  height:80%;
+  margin:auto;
+  gap:1rem;
+  flex-wrap:wrap;
+}
+
+
+#completed-tasks, #uncompleted-tasks {
+  margin:auto;
+  box-shadow:1px 1px 8px black;
+  background-color: white;
+  min-width:50%;
+  min-height:50%;
+  border-radius:1rem;
+}
+
+#completed-tasks > h2, #uncompleted-tasks > h2 {
+  margin-bottom:2rem;
+  text-align: center;
+  font-size:2.5rem;
+}
+
+#completed-tasks > ul > li, #uncompleted-tasks > ul > li {
+display:flex;
+flex-wrap:wrap;
+justify-content: space-between;
+padding:0.5rem 0.5rem;
+margin:1rem auto;
+box-shadow:2px 2px 5px black;
+font-size:1.5rem;
+width:95%;
+align-items: center;
+border-radius:1rem;
+}
+#completed-tasks > ul > li > button, #uncompleted-tasks > ul > li > button {
+  background-color: red;
+  border:none;
+  padding:0.5rem 1rem;
+  font-size:1.2rem;
+  border-radius:1rem;
+  color:white;
+}
+
+#uncompleted-tasks  input[type="checkbox"], 
+#completed-tasks  input[type="checkbox"] {
+  width:30px;
+  height:30px;
+} 
+
+#completed-tasks input[type="checkbox"]:checked {
+  background:red
+}
