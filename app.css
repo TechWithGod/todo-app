@@ -221,6 +221,9 @@ border-radius:1rem;
     width:95%;
     text-wrap:wrap;
   }
+  #uncompleted-tasks > ul > li > p, #completed-tasks > ul > li > p {
+    text-align: justify;
+  }
   #uncompleted-tasks > ul > li > button, #completed-tasks > ul > li > button{
    font-size:smaller;
   }
